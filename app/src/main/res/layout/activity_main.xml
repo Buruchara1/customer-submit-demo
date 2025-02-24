@@ -26,7 +26,8 @@
         android:layout_below="@id/textViewTitle"
         android:layout_marginTop="16dp"
         android:hint="Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <!-- Email Input -->
     <EditText
@@ -36,7 +37,8 @@
         android:layout_below="@id/editTextName"
         android:layout_marginTop="16dp"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <!-- Password Input -->
     <EditText
@@ -46,20 +48,30 @@
         android:layout_below="@id/editTextEmail"
         android:layout_marginTop="16dp"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
     <!-- Country code input -->
-
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="+254"
+        android:layout_below="@id/editTextPassword"/>
     <!-- Phone Number Input -->
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="2dp"
         android:layout_below="@id/editTextPassword"
-        android:layout_toRightOf="@id/editTextCountryCode"
         android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/editTextCode"
         android:hint="Phone Number"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingStart="2dp" />
 
     <!-- Submit Button -->
     <Button
