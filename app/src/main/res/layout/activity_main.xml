@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title:
+     Uses android:alignParentTop which sets alignment to be tethered to the top of the Relative Layout
+     -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sample Customer Submission"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Name Input -->
+    <!-- Each input field is set to use android:layout_below which takes the recious element as an arguement and aligns current element below that which is taken as a parameter-->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <!-- Country code input -->
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_toRightOf="@id/editTextCountryCode"
+        android:layout_marginTop="16dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Submit" />
+
+</RelativeLayout>
