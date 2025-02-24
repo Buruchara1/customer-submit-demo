@@ -26,6 +26,7 @@
         android:layout_below="@id/textViewTitle"
         android:layout_marginTop="16dp"
         android:hint="Name"
+        android:background="@drawable/input_background"
         android:inputType="textPersonName"
         android:minHeight="48dp" />
 
@@ -37,6 +38,7 @@
         android:layout_below="@id/editTextName"
         android:layout_marginTop="16dp"
         android:hint="Email"
+        android:background="@drawable/input_background"
         android:inputType="textEmailAddress"
         android:minHeight="48dp" />
 
@@ -48,19 +50,23 @@
         android:layout_below="@id/editTextEmail"
         android:layout_marginTop="16dp"
         android:hint="Password"
+        android:background="@drawable/input_background"
         android:inputType="textPassword"
         android:minHeight="48dp" />
+
     <!-- Country code input -->
     <EditText
         android:id="@+id/editTextCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/input_background"
         android:inputType="number"
         android:minHeight="48dp"
         android:hint="+254"
         android:layout_below="@id/editTextPassword"/>
     <!-- Phone Number Input -->
+    <!-- this uses the android:layout_toRightOf to align the input next to the countrycode-->
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
@@ -70,7 +76,9 @@
         android:layout_toRightOf="@id/editTextCode"
         android:hint="Phone Number"
         android:inputType="phone"
+        android:background="@drawable/input_background"
         android:minHeight="48dp"
+        android:layout_marginStart="5dp"
         android:paddingStart="2dp" />
 
     <!-- Submit Button -->
@@ -81,6 +89,7 @@
         android:layout_below="@id/editTextPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:background="@drawable/submit_button_back"
         android:text="Submit" />
 
 </RelativeLayout>
